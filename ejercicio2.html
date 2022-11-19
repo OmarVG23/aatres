@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link href="./style/ej2.css" rel="stylesheet">
+    <script src="./js/Calculadora.js" type="text/javascript"></script>
+    <script src="./js/display.js" type="text/javascript"></script>
+    <script src="./js/index.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header>
+        <div class="cajadeImagen">
+            <img class="imag" src="https://media0.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=6c09b9522f9636dd25def46a6b161d395e690470048d1ab3&rid=giphy.gif&ct=s" alt="imag">
+        </div>
+        <div class="cajadetitulo">
+            <h1>JAVASCRIPT</h1>
+        </div>
+    
+    
+    </header>
+    <div id="particles-js"></div>
+    <nav>
+        <ul>
+            <li><a href="./index.html">HISTORIA</a></li>
+            <li><a href="./ejercicio1.html">EJERCICIO 1</a></li>
+            <li><a href="./ejercicio2.html">EJERCICIO 2</a></li>
+            <li><a href="./licuadora.html">EJERCICIO 3</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>CALCULADORA EN JS</h2>
+        <p>Pretendemos crear un cuadro o banner que nos muestre una calculadora parecida a una sencilla calculadora de bolsillo. nos fijamos como ejemplo en la calculadora que viene con en el sistema operativo windows o en alguna parecida.
+
+            El recuadro o banner de la calculadora debe distinguirse del resto de la página, debe tener una "pantalla" donde ver los números que vamos escribiendo y los resultados, y unos botones o teclas con los números, operaciones, y otros elementos que hay en una calculadora normal.
+            
+            La calculadora debe resolver las operaciones aritméticas que se planteen. para ello además de usar los botones mediante un click de ratón, debemos poder usar el teclado para escribir y resolver las operaciones.
+            
+            A la derecha mostramos cómo queda la calculadora una vez acabado el ejercicio.
+            
+            
+            pantalla y botones
+            Empezaremos por crear el código que muestre la "pantalla" de la calculadora y los botones que vamos a utilizar para las "teclas". Para ello creamos una página en HTML. En ella creamos un "div" en el que mostraremos la calculadora.
+            
+            Dentro del "div calculadora", creamos un formulario que contendrá los elementos de la calculadora. En primer lugar la pantalla, a la que ponemos un atributo "id" para poder manejarla más tarde, y las teclas que consistirán en elementos "input type='button'". La distribución de los botones en filas la hacemos poniendo todos los botones de una misma fila dentro de un mismo párrafo.  
+        </p>
+        <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcChC4jFvzjIDCxPbIEde0sItVnMuUKw3Zbg&usqp=CAU" alt=""
+            height="50%" width="50%"></center>
+        <h2>Desarrollo:</h2>
+    <div class="container">
+        <div class="calculadora">
+            
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button class="col-2" onclick="display.borrarTodo()">C</button>
+            <button onclick="display.borrar()">&larr;</button>
+            <button class="operador" value="dividir">%</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">X</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="restar">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="sumar">+</button>
+            <button class="col-2 numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+        </div>
+    </div>
+    </main>
+    <footer >
+        <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/jeffryvg/" target="_blank"><img src="./image/Facebook.png" alt="" width="100%" style="float: left;"></a>
+        </i>
+        <i class="fa-brands fa-facebook"><a href="https://www.instagram.com/omarvg19/" target="_blank"><img src="./image/insta.png" alt="" width="100%" style="float: left;"></a>
+        </i>
+        <i class="fa-brands fa-facebook"><a href="mailto:jeffryvg_17@hotmail.com" target="_blank"><img src="./image/mailll.png" alt=""width="100%" style="float: left;" ></a>
+        </i>
+        <footer >
+        <br>
+        PAGINA CREADA POR OMAR
+        <br>
+        Derechos Reservados
+        </footer>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./JS/app.js"></script>
+</body>
+</html>
